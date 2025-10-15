@@ -1,4 +1,3 @@
-# İnsan sınıfı (temel sınıf)
 class Insan:
     def __init__(self, ad, yas):
         self.ad = ad
@@ -8,7 +7,6 @@ class Insan:
         print(f"Merhaba, ben {self.ad}. Güzel bir gün değil mi?")
 
 
-# Hoca sınıfı (İnsan sınıfından miras alıyor)
 class Hoca(Insan):
     def __init__(self, ad, yas, sicil_no):
         super().__init__(ad, yas)
@@ -21,7 +19,6 @@ class Hoca(Insan):
         print(f"Hoca {self.ad} şu anda ders veriyor.")
 
 
-# Sekreter sınıfı (İnsan sınıfından miras alıyor)
 class Sekreter(Insan):
     def __init__(self, ad, yas, departman):
         super().__init__(ad, yas)
@@ -34,7 +31,6 @@ class Sekreter(Insan):
         print(f"Sekreter {self.ad} yeni bir randevu ayarlıyor.")
 
 
-# Öğrenci sınıfı (İnsan sınıfından miras alıyor)
 class Ogrenci(Insan):
     def __init__(self, ad, yas, ogrenci_no):
         super().__init__(ad, yas)
@@ -47,7 +43,6 @@ class Ogrenci(Insan):
         print(f"Öğrenci {self.ad} şu anda ders çalışıyor.")
 
 
-# Örnek kullanım:
 if __name__ == "__main__":
     insan = Insan("Ahmet", 40)
     hoca = Hoca("Ayşe", 35, "H123")
